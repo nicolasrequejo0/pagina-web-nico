@@ -87,7 +87,12 @@
     <ul class="hidden lg:flex items-center gap-8">
       <li><a href="#inicio"    class="text-[11px] font-medium uppercase tracking-[0.28em] text-white/85 hover:text-white transition-colors whitespace-nowrap">Home</a></li>
       <li><a href="#nosotros"  class="text-[11px] font-medium uppercase tracking-[0.28em] text-white/85 hover:text-white transition-colors whitespace-nowrap">Nosotros</a></li>
-      <li><a href="#servicios" class="text-[11px] font-medium uppercase tracking-[0.28em] text-white/85 hover:text-white transition-colors whitespace-nowrap">Servicios</a></li>
+      <li class="relative group">
+        <a href="#servicios" class="flex items-center gap-1 text-[11px] font-medium uppercase tracking-[0.28em] text-white/85 hover:text-white transition-colors whitespace-nowrap">Servicios <i class="ri-arrow-down-s-line text-xs"></i></a>
+        <ul class="absolute top-full left-0 mt-2 w-64 rounded-xl border border-white/10 bg-black/90 backdrop-blur py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <li><a href="jardines.html" class="block px-4 py-2.5 text-[10px] uppercase tracking-[0.2em] text-white/80 hover:text-white hover:bg-white/10 transition">Mantenimiento y Diseño de Jardines</a></li>
+        </ul>
+      </li>
       <li><a href="#proyectos" class="text-[11px] font-medium uppercase tracking-[0.28em] text-white/85 hover:text-white transition-colors whitespace-nowrap">Proyectos Realizados</a></li>
       <li><a href="#contacto"  class="text-[11px] font-medium uppercase tracking-[0.28em] text-white/85 hover:text-white transition-colors whitespace-nowrap">Contacto</a></li>
     </ul>
@@ -105,6 +110,7 @@
       <li><a href="#inicio"    onclick="closeMobile()" class="block rounded px-2 py-2 text-sm uppercase tracking-[0.22em] text-white/90 hover:bg-white/10">Home</a></li>
       <li><a href="#nosotros"  onclick="closeMobile()" class="block rounded px-2 py-2 text-sm uppercase tracking-[0.22em] text-white/90 hover:bg-white/10">Nosotros</a></li>
       <li><a href="#servicios" onclick="closeMobile()" class="block rounded px-2 py-2 text-sm uppercase tracking-[0.22em] text-white/90 hover:bg-white/10">Servicios</a></li>
+      <li><a href="jardines.html" onclick="closeMobile()" class="block rounded px-2 py-2 pl-6 text-xs uppercase tracking-[0.22em] text-white/60 hover:bg-white/10 hover:text-white/90">↳ Mantenimiento y Diseño de Jardines</a></li>
       <li><a href="#proyectos" onclick="closeMobile()" class="block rounded px-2 py-2 text-sm uppercase tracking-[0.22em] text-white/90 hover:bg-white/10">Proyectos Realizados</a></li>
       <li><a href="#contacto"  onclick="closeMobile()" class="block rounded px-2 py-2 text-sm uppercase tracking-[0.22em] text-white/90 hover:bg-white/10">Contacto</a></li>
     </ul>
@@ -202,9 +208,9 @@
 
     <div class="order-1 md:order-2 md:col-span-6">
       <div class="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-3xl border border-white/10 md:aspect-[4/3] md:max-w-none">
-        <img src="https://readdy.ai/api/search-image?query=construction%20company%20office%20interior%20modern%20design%20with%20blueprints%20on%20table%20hard%20hats%20tools%20warm%20lighting%20professional%20atmosphere%20high%20quality%20photography&width=800&height=600&seq=30&orientation=landscape"
-             alt="OMG Construcciones — nuestro estudio y obras" loading="lazy"
-             class="h-full w-full object-cover" />
+        <img src="assets/equipo-omg.png"
+             alt="Equipo Grupo OMG Construcción" loading="lazy"
+             class="h-full w-full object-cover object-top" />
         <div class="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/30 via-transparent to-black/20"></div>
       </div>
     </div>
@@ -221,11 +227,11 @@
         En Grupo OMG Construcción desarrollamos proyectos de construcción y reformas con altos estándares de calidad, uniendo diseño, planificación y ejecución precisa. Acompañamos a nuestros clientes en todo el proceso constructivo, ofreciendo un servicio transparente, profesional y totalmente personalizado, desde la idea inicial hasta la entrega final. Trabajamos en obras residenciales y proyectos de alto nivel en el sur de Tenerife, incluyendo villas de lujo en zonas exclusivas como La Caleta. Nuestro objetivo es construir con calidad, confianza y resultados que superen expectativas.
       </p>
 
-      <dl class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <dl class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" id="stats-block">
         <div class="group rounded-2xl border border-white/15 bg-white/10 p-4 text-center backdrop-blur-sm transition hover:-translate-y-1 hover:border-white/40 hover:bg-white/15 md:text-left">
           <dd>
             <div class="flex items-baseline justify-center gap-1 sm:justify-start">
-              <span class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-none tracking-tight">+10</span>
+              <span class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-none tracking-tight stat-count" data-target="10" data-prefix="+">0</span>
             </div>
             <div class="mt-2 text-sm sm:text-[15px] opacity-90">Años</div>
             <div class="text-xs sm:text-sm opacity-70">de experiencia en el rubro.</div>
@@ -234,7 +240,7 @@
         <div class="group rounded-2xl border border-white/15 bg-white/10 p-4 text-center backdrop-blur-sm transition hover:-translate-y-1 hover:border-white/40 hover:bg-white/15 md:text-left">
           <dd>
             <div class="flex items-baseline justify-center gap-1 sm:justify-start">
-              <span class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-none tracking-tight">100</span>
+              <span class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-none tracking-tight stat-count" data-target="100" data-prefix="">0</span>
               <span class="text-lg sm:text-xl opacity-80">%</span>
             </div>
             <div class="mt-2 text-sm sm:text-[15px] opacity-90">Servicio</div>
@@ -244,7 +250,7 @@
         <div class="group rounded-2xl border border-white/15 bg-white/10 p-4 text-center backdrop-blur-sm transition hover:-translate-y-1 hover:border-white/40 hover:bg-white/15 md:text-left">
           <dd>
             <div class="flex items-baseline justify-center gap-1 sm:justify-start">
-              <span class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-none tracking-tight">1</span>
+              <span class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-none tracking-tight stat-count" data-target="1" data-prefix="">0</span>
               <span class="text-lg sm:text-xl opacity-80">:1</span>
             </div>
             <div class="mt-2 text-sm sm:text-[15px] opacity-90">Asesoramiento</div>
@@ -419,30 +425,37 @@
 ════════════════════════════════════════════ -->
 <section id="servicios" class="bg-neutral-950 text-neutral-100 overflow-hidden scroll-mt-28">
   <div class="mx-auto max-w-6xl px-4 py-20 md:py-28">
-    <div class="mb-8">
+    <div class="mb-10">
       <h2 class="text-3xl font-extrabold tracking-tight md:text-5xl">Nuestros <span class="text-neutral-400">Servicios</span></h2>
       <span class="mt-3 block h-[2px] w-24 bg-neutral-500"></span>
+      <p class="mt-5 max-w-2xl text-sm leading-relaxed text-neutral-400">Nos encargamos de todo el proceso constructivo para que tú solo te preocupes por el resultado. Desde la idea inicial hasta la entrega final, trabajamos con planificación, precisión y total transparencia.</p>
     </div>
     <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 md:gap-8">
       <li class="group rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 backdrop-blur-sm transition hover:-translate-y-1 hover:border-neutral-600 hover:bg-neutral-900/90">
-        <span class="text-sm font-medium tracking-[0.3em] text-neutral-400">01</span>
+        <span class="text-sm font-medium tracking-[0.3em] text-neutral-400">01 · Proyecto</span>
         <h3 class="mt-4 text-xl font-semibold text-white">Proyecto</h3>
-        <p class="mt-2 text-sm leading-relaxed text-neutral-300">Diseñamos el proyecto a la medida de tus necesidades, considerando economía, estilo y particularidades de cada cliente. Generamos la documentación técnica para ejecución, los planos municipales y gestionamos los permisos de obra.</p>
+        <p class="mt-2 text-sm leading-relaxed text-neutral-300">Diseñamos tu proyecto a medida, adaptándonos a tus necesidades, estilo y presupuesto.</p>
+        <p class="mt-2 text-sm leading-relaxed text-neutral-400">Nos ocupamos de toda la parte técnica: desarrollo de planos, documentación para ejecución, trámites municipales y gestión de licencias, asegurando que todo esté listo para construir sin imprevistos.</p>
         <div class="mt-4 h-[1px] w-full origin-left scale-x-0 bg-neutral-500/60 transition-transform duration-300 group-hover:scale-x-100"></div>
       </li>
       <li class="group rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 backdrop-blur-sm transition hover:-translate-y-1 hover:border-neutral-600 hover:bg-neutral-900/90">
-        <span class="text-sm font-medium tracking-[0.3em] text-neutral-400">02</span>
+        <span class="text-sm font-medium tracking-[0.3em] text-neutral-400">02 · Ejecución</span>
         <h3 class="mt-4 text-xl font-semibold text-white">Ejecución de obra</h3>
-        <p class="mt-2 text-sm leading-relaxed text-neutral-300">Nos encargamos de TODO. Desde los preliminares hasta el último detalle.</p>
+        <p class="mt-2 text-sm leading-relaxed text-neutral-300">Convertimos el proyecto en realidad con una ejecución rigurosa y cuidada en cada detalle.</p>
+        <p class="mt-2 text-sm leading-relaxed text-neutral-400">Nos encargamos de todo el proceso constructivo, coordinando cada fase de la obra para garantizar calidad, cumplimiento de plazos y un resultado final a la altura de lo proyectado.</p>
         <div class="mt-4 h-[1px] w-full origin-left scale-x-0 bg-neutral-500/60 transition-transform duration-300 group-hover:scale-x-100"></div>
       </li>
       <li class="group rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 backdrop-blur-sm transition hover:-translate-y-1 hover:border-neutral-600 hover:bg-neutral-900/90">
-        <span class="text-sm font-medium tracking-[0.3em] text-neutral-400">03</span>
+        <span class="text-sm font-medium tracking-[0.3em] text-neutral-400">03 · Transparencia</span>
         <h3 class="mt-4 text-xl font-semibold text-white">Transparencia</h3>
-        <p class="mt-2 text-sm leading-relaxed text-neutral-300">Trabajamos con un sistema de contratación transparente, predecible y con forma de pago de acuerdo a avance de obra.</p>
+        <p class="mt-2 text-sm leading-relaxed text-neutral-300">Trabajamos con un sistema claro, ordenado y sin sorpresas.</p>
+        <p class="mt-2 text-sm leading-relaxed text-neutral-400">Definimos cada etapa del proyecto y establecemos una forma de pago vinculada al avance real de la obra, para que tengas control total y tranquilidad durante todo el proceso.</p>
         <div class="mt-4 h-[1px] w-full origin-left scale-x-0 bg-neutral-500/60 transition-transform duration-300 group-hover:scale-x-100"></div>
       </li>
     </ul>
+    <div class="mt-10 rounded-2xl border border-neutral-700 bg-neutral-900/50 px-6 py-5 text-center backdrop-blur-sm">
+      <p class="text-sm font-medium text-neutral-200">Una sola empresa, todo el proceso controlado. Así evitamos errores, retrasos y sobrecostes innecesarios.</p>
+    </div>
   </div>
 </section>
 
@@ -458,44 +471,61 @@
     </div>
     <div class="relative overflow-hidden">
       <div class="carousel-track" id="testimonials-track">
-        <div class="min-w-0 flex-[0_0_100%] sm:flex-[0_0_72%] md:flex-[0_0_56%] lg:flex-[0_0_46%] xl:flex-[0_0_38%]">
+        <!-- Página 1 -->
+        <div class="min-w-0 flex-[0_0_100%] grid grid-cols-1 sm:grid-cols-2 gap-4">
           <article class="group relative h-full rounded-3xl border border-white/10 bg-neutral-900/75 shadow-[0_12px_32px_rgba(0,0,0,0.35)] backdrop-blur">
             <div class="pointer-events-none absolute inset-x-0 top-0 h-14 rounded-t-3xl bg-gradient-to-b from-white/10 to-transparent"></div>
             <div class="flex items-start gap-3 px-5 pt-5">
-              <div class="truncate text-sm font-semibold text-white">Juan</div>
+              <div><div class="truncate text-sm font-semibold text-white">Laura Franco Castaño</div><div class="text-xs text-neutral-400 mt-0.5">Hace 3 años · Google</div></div>
               <div class="ml-auto flex items-center gap-1"><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i></div>
             </div>
-            <div class="px-5 pb-5 pt-3"><blockquote class="text-[15px] leading-relaxed text-neutral-100/90">"Después de tanto buscar, encontramos una empresa que nos transmitió seguridad y nos brindó la mejor relación precio/calidad."</blockquote></div>
+            <div class="px-5 pb-5 pt-3"><blockquote class="text-[15px] leading-relaxed text-neutral-100/90">"Profesionales y muy buen trabajo. La verdad que quedé encantada con el servicio que contraté. Lo recomiendo mucho!"</blockquote></div>
+          </article>
+          <article class="group relative h-full rounded-3xl border border-white/10 bg-neutral-900/75 shadow-[0_12px_32px_rgba(0,0,0,0.35)] backdrop-blur">
+            <div class="pointer-events-none absolute inset-x-0 top-0 h-14 rounded-t-3xl bg-gradient-to-b from-white/10 to-transparent"></div>
+            <div class="flex items-start gap-3 px-5 pt-5">
+              <div><div class="truncate text-sm font-semibold text-white">Sara Fidalgo</div><div class="text-xs text-neutral-400 mt-0.5">Hace 3 años · Google</div></div>
+              <div class="ml-auto flex items-center gap-1"><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i></div>
+            </div>
+            <div class="px-5 pb-5 pt-3"><blockquote class="text-[15px] leading-relaxed text-neutral-100/90">"El trato que recibimos fue genial, el precio acorde con lo que pedimos y quedamos encantadísimos con el resultado, especialmente con el jardín."</blockquote></div>
           </article>
         </div>
-        <div class="min-w-0 flex-[0_0_100%] sm:flex-[0_0_72%] md:flex-[0_0_56%] lg:flex-[0_0_46%] xl:flex-[0_0_38%] pl-0 sm:pl-4">
+        <!-- Página 2 -->
+        <div class="min-w-0 flex-[0_0_100%] grid grid-cols-1 sm:grid-cols-2 gap-4">
           <article class="group relative h-full rounded-3xl border border-white/10 bg-neutral-900/75 shadow-[0_12px_32px_rgba(0,0,0,0.35)] backdrop-blur">
             <div class="pointer-events-none absolute inset-x-0 top-0 h-14 rounded-t-3xl bg-gradient-to-b from-white/10 to-transparent"></div>
             <div class="flex items-start gap-3 px-5 pt-5">
-              <div class="truncate text-sm font-semibold text-white">Hernán</div>
+              <div><div class="truncate text-sm font-semibold text-white">Andrea Montiel Fernández</div><div class="text-xs text-neutral-400 mt-0.5">Hace 3 años · Google</div></div>
               <div class="ml-auto flex items-center gap-1"><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i></div>
             </div>
-            <div class="px-5 pb-5 pt-3"><blockquote class="text-[15px] leading-relaxed text-neutral-100/90">"Elegimos por diseño y trato. Siempre tuvieron la mejor predisposición y respuestas claras."</blockquote></div>
+            <div class="px-5 pb-5 pt-3"><blockquote class="text-[15px] leading-relaxed text-neutral-100/90">"Maravillosa relación calidad-precio, muy profesionales y atentos. Sin duda volvería a contratar sus servicios."</blockquote></div>
+          </article>
+          <article class="group relative h-full rounded-3xl border border-white/10 bg-neutral-900/75 shadow-[0_12px_32px_rgba(0,0,0,0.35)] backdrop-blur">
+            <div class="pointer-events-none absolute inset-x-0 top-0 h-14 rounded-t-3xl bg-gradient-to-b from-white/10 to-transparent"></div>
+            <div class="flex items-start gap-3 px-5 pt-5">
+              <div><div class="truncate text-sm font-semibold text-white">Alejandro Hernández</div><div class="text-xs text-neutral-400 mt-0.5">Hace 3 años · Google</div></div>
+              <div class="ml-auto flex items-center gap-1"><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i></div>
+            </div>
+            <div class="px-5 pb-5 pt-3"><blockquote class="text-[15px] leading-relaxed text-neutral-100/90">"Muy buen servicio, seriedad y transparencia a la hora de realizar su trabajo. Muy contento, lo recomiendo al 100%."</blockquote></div>
           </article>
         </div>
-        <div class="min-w-0 flex-[0_0_100%] sm:flex-[0_0_72%] md:flex-[0_0_56%] lg:flex-[0_0_46%] xl:flex-[0_0_38%] pl-0 sm:pl-4">
+        <!-- Página 3 -->
+        <div class="min-w-0 flex-[0_0_100%] grid grid-cols-1 sm:grid-cols-2 gap-4">
           <article class="group relative h-full rounded-3xl border border-white/10 bg-neutral-900/75 shadow-[0_12px_32px_rgba(0,0,0,0.35)] backdrop-blur">
             <div class="pointer-events-none absolute inset-x-0 top-0 h-14 rounded-t-3xl bg-gradient-to-b from-white/10 to-transparent"></div>
             <div class="flex items-start gap-3 px-5 pt-5">
-              <div class="truncate text-sm font-semibold text-white">Augusto</div>
+              <div><div class="truncate text-sm font-semibold text-white">Henar Romero</div><div class="text-xs text-neutral-400 mt-0.5">Hace 3 años · Google</div></div>
               <div class="ml-auto flex items-center gap-1"><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i></div>
             </div>
-            <div class="px-5 pb-5 pt-3"><blockquote class="text-[15px] leading-relaxed text-neutral-100/90">"Propuesta clara y seria. El resultado: nuestra casa para disfrutar con familia y amigos."</blockquote></div>
+            <div class="px-5 pb-5 pt-3"><blockquote class="text-[15px] leading-relaxed text-neutral-100/90">"Serios y eficientes, todo perfecto."</blockquote></div>
           </article>
-        </div>
-        <div class="min-w-0 flex-[0_0_100%] sm:flex-[0_0_72%] md:flex-[0_0_56%] lg:flex-[0_0_46%] xl:flex-[0_0_38%] pl-0 sm:pl-4">
           <article class="group relative h-full rounded-3xl border border-white/10 bg-neutral-900/75 shadow-[0_12px_32px_rgba(0,0,0,0.35)] backdrop-blur">
             <div class="pointer-events-none absolute inset-x-0 top-0 h-14 rounded-t-3xl bg-gradient-to-b from-white/10 to-transparent"></div>
             <div class="flex items-start gap-3 px-5 pt-5">
-              <div class="truncate text-sm font-semibold text-white">Carolina</div>
+              <div><div class="truncate text-sm font-semibold text-white">Peter Jan vdV</div><div class="text-xs text-neutral-400 mt-0.5">Hace 3 años · Google</div></div>
               <div class="ml-auto flex items-center gap-1"><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i><i class="ri-star-fill text-amber-400 text-xs"></i></div>
             </div>
-            <div class="px-5 pb-5 pt-3"><blockquote class="text-[15px] leading-relaxed text-neutral-100/90">"Excelente seguimiento y terminaciones. Cumplieron plazos y superaron expectativas."</blockquote></div>
+            <div class="px-5 pb-5 pt-3"><blockquote class="text-[15px] leading-relaxed text-neutral-100/90">"Omar y su equipo tienen mucha experiencia. Llevan mucho tiempo encargándose del mantenimiento de nuestro jardín. Estamos muy satisfechos con su trabajo."</blockquote></div>
           </article>
         </div>
       </div>
@@ -513,7 +543,8 @@
   <div class="relative mx-auto max-w-6xl px-4 py-16 sm:py-20 md:py-24 lg:py-28">
     <div class="mb-10 sm:mb-12">
       <span class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[11px] uppercase tracking-[0.28em] text-white/80 backdrop-blur">Contacto</span>
-      <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl">Contanos tu <span class="text-neutral-400">proyecto</span></h2>
+      <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl">Cuéntanos tu <span class="text-neutral-400">proyecto</span></h2>
+      <p class="mt-3 text-sm text-white/60 flex items-center gap-2"><span class="inline-block h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>Atención disponible 24/7 — siempre hay alguien para responderte</p>
       <span class="mt-4 block h-[2px] w-24 bg-neutral-500"></span>
     </div>
     <div class="grid grid-cols-1 gap-6 md:grid-cols-12 md:gap-8">
@@ -532,7 +563,7 @@
             </div>
             <div class="flex items-start gap-3">
               <div class="mt-1 grid h-5 w-5 place-items-center rounded-full bg-emerald-400/20 text-emerald-300 flex-shrink-0"><i class="ri-time-line text-xs"></i></div>
-              <div><div class="text-sm font-semibold text-white">Respuesta en el día</div><div class="text-xs text-white/70">Horarios hábiles de 9 a 18 h.</div></div>
+              <div><div class="text-sm font-semibold text-white">Atención 24/7</div><div class="text-xs text-white/70">Disponibles a cualquier hora, todos los días.</div></div>
             </div>
             <div class="flex items-start gap-3">
               <div class="mt-1 grid h-5 w-5 place-items-center rounded-full bg-emerald-400/20 text-emerald-300 flex-shrink-0"><i class="ri-chat-check-line text-xs"></i></div>
@@ -709,7 +740,7 @@
   setInterval(galleryNext, 5000);
 
   // ─── Testimonials carousel ──────────────────
-  const testimonialsTotal = 4;
+  const testimonialsTotal = 3;
   let testimonialsIdx = 0;
   const testimonialsTrack = document.getElementById('testimonials-track');
   const testimonialsDotsContainer = document.getElementById('testimonials-dots');
@@ -755,6 +786,36 @@
       </div>
     `;
   }
+
+  // ─── Animación de conteo en estadísticas ──────────────────
+  function animateCount(el) {
+    const target = parseInt(el.dataset.target);
+    const prefix = el.dataset.prefix || '';
+    const duration = 1800;
+    const startTime = performance.now();
+    function step(now) {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = Math.floor(eased * target);
+      el.textContent = prefix + current;
+      if (progress < 1) requestAnimationFrame(step);
+      else el.textContent = prefix + target;
+    }
+    requestAnimationFrame(step);
+  }
+
+  const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.stat-count').forEach(animateCount);
+        statsObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.4 });
+
+  const statsBlock = document.getElementById('stats-block');
+  if (statsBlock) statsObserver.observe(statsBlock);
 </script>
 
 </body>
