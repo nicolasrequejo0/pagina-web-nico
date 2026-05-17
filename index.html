@@ -117,6 +117,85 @@
       color: rgba(255,255,255,0.8);
       background: #0a0a0a;
     }
+
+    .ba-slider {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1rem;
+      user-select: none;
+      touch-action: pan-y;
+      cursor: ew-resize;
+      width: 100%;
+    }
+    .ba-after {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+    .ba-before-wrap {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+    }
+    .ba-before {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+    .ba-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: white;
+      transform: translateX(-50%);
+      pointer-events: none;
+    }
+    .ba-handle {
+      position: absolute;
+      top: 50%;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: white;
+      border: 3px solid white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.45);
+      pointer-events: none;
+      transition: transform 0.08s ease, box-shadow 0.08s ease;
+    }
+    .ba-handle svg { width: 20px; height: 20px; fill: #111; }
+    .ba-slider:active .ba-handle {
+      transform: translate(-50%, -50%) scale(1.08);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.55);
+    }
+    .ba-label {
+      position: absolute;
+      top: 12px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      pointer-events: none;
+      transition: opacity 0.2s;
+    }
+    .ba-label-before { left: 12px; background: rgba(0,0,0,0.55); color: #fff; }
+    .ba-label-after  { right: 12px; background: rgba(255,255,255,0.15); color: #fff; backdrop-filter: blur(4px); }
   </style>
 </head>
 <body class="bg-black text-white overflow-x-hidden">
