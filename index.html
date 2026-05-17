@@ -138,6 +138,7 @@
     <!-- Desktop links -->
     <ul class="hidden lg:flex items-center gap-8">
       <li><a href="#inicio"    class="text-[11px] font-medium uppercase tracking-[0.28em] text-white/85 hover:text-white transition-colors whitespace-nowrap">Home</a></li>
+      <li><a href="#nosotros"  class="text-[11px] font-medium uppercase tracking-[0.28em] text-white/85 hover:text-white transition-colors whitespace-nowrap">Nosotros</a></li>
       <li class="relative group">
         <a href="#servicios" class="flex items-center gap-1 text-[11px] font-medium uppercase tracking-[0.28em] text-white/85 hover:text-white transition-colors whitespace-nowrap">Servicios <i class="ri-arrow-down-s-line text-xs"></i></a>
         <ul class="absolute top-full left-0 mt-2 w-64 rounded-xl border border-white/10 bg-black/90 backdrop-blur py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
@@ -148,8 +149,7 @@
           <li><a href="jardines.html" class="block px-4 py-2.5 text-[10px] uppercase tracking-[0.2em] text-white/80 hover:text-white hover:bg-white/10 transition">Mantenimiento y Diseño de Jardines</a></li>
         </ul>
       </li>
-      <li><a href="#nosotros"  class="text-[11px] font-medium uppercase tracking-[0.28em] text-white/85 hover:text-white transition-colors whitespace-nowrap">Nosotros</a></li>
-      <li><a href="#proyectos" class="text-[11px] font-medium uppercase tracking-[0.28em] text-white/85 hover:text-white transition-colors whitespace-nowrap">Proyectos Realizados</a></li>
+      <li><a href="#antes-despues" class="text-[11px] font-medium uppercase tracking-[0.28em] text-white/85 hover:text-white transition-colors whitespace-nowrap">Nuestras Reformas</a></li>
       <li><a href="#contacto"  class="text-[11px] font-medium uppercase tracking-[0.28em] text-white/85 hover:text-white transition-colors whitespace-nowrap">Contacto</a></li>
     </ul>
 
@@ -164,14 +164,14 @@
   <div id="mobile-menu" class="overflow-hidden border-t border-white/10 bg-black/90 backdrop-blur transition-[max-height] duration-300 lg:hidden max-h-0">
     <ul class="mx-auto flex max-w-7xl flex-col px-4 py-3">
       <li><a href="#inicio"    onclick="closeMobile()" class="block rounded px-2 py-2 text-sm uppercase tracking-[0.22em] text-white/90 hover:bg-white/10">Home</a></li>
+      <li><a href="#nosotros"  onclick="closeMobile()" class="block rounded px-2 py-2 text-sm uppercase tracking-[0.22em] text-white/90 hover:bg-white/10">Nosotros</a></li>
       <li><a href="#servicios" onclick="closeMobile()" class="block rounded px-2 py-2 text-sm uppercase tracking-[0.22em] text-white/90 hover:bg-white/10">Servicios</a></li>
       <li><a href="reformas-banos.html" onclick="closeMobile()" class="block rounded px-2 py-2 pl-6 text-xs uppercase tracking-[0.22em] text-white/60 hover:bg-white/10 hover:text-white/90">↳ Reforma de Baños</a></li>
       <li><a href="reformas-cocina.html" onclick="closeMobile()" class="block rounded px-2 py-2 pl-6 text-xs uppercase tracking-[0.22em] text-white/60 hover:bg-white/10 hover:text-white/90">↳ Reforma de Cocinas</a></li>
       <li><a href="reformas-salon.html" onclick="closeMobile()" class="block rounded px-2 py-2 pl-6 text-xs uppercase tracking-[0.22em] text-white/60 hover:bg-white/10 hover:text-white/90">↳ Reforma de Salones</a></li>
       <li><a href="reformas-habitacion.html" onclick="closeMobile()" class="block rounded px-2 py-2 pl-6 text-xs uppercase tracking-[0.22em] text-white/60 hover:bg-white/10 hover:text-white/90">↳ Reforma de Habitaciones</a></li>
       <li><a href="jardines.html" onclick="closeMobile()" class="block rounded px-2 py-2 pl-6 text-xs uppercase tracking-[0.22em] text-white/60 hover:bg-white/10 hover:text-white/90">↳ Mantenimiento y Diseño de Jardines</a></li>
-      <li><a href="#nosotros"  onclick="closeMobile()" class="block rounded px-2 py-2 text-sm uppercase tracking-[0.22em] text-white/90 hover:bg-white/10">Nosotros</a></li>
-      <li><a href="#proyectos" onclick="closeMobile()" class="block rounded px-2 py-2 text-sm uppercase tracking-[0.22em] text-white/90 hover:bg-white/10">Proyectos Realizados</a></li>
+      <li><a href="#antes-despues" onclick="closeMobile()" class="block rounded px-2 py-2 text-sm uppercase tracking-[0.22em] text-white/90 hover:bg-white/10">Nuestras Reformas</a></li>
       <li><a href="#contacto"  onclick="closeMobile()" class="block rounded px-2 py-2 text-sm uppercase tracking-[0.22em] text-white/90 hover:bg-white/10">Contacto</a></li>
     </ul>
   </div>
@@ -186,13 +186,13 @@
   <!-- Background slides -->
   <div class="absolute inset-0">
     <div id="slide-0" class="carousel-slide absolute inset-0 opacity-100">
-      <img src="assets/hero-1.png" alt="Reforma integral de vivienda en Tenerife Sur – OMG Construcciones y Reformas" class="absolute inset-0 h-full w-full object-cover" />
+      <img src="assets/hero-1.png" alt="Casa moderna Tenerife Sur" class="absolute inset-0 h-full w-full object-cover" />
     </div>
     <div id="slide-1" class="carousel-slide absolute inset-0 opacity-0">
-      <img src="assets/hero-2.png" alt="Empresa de reformas en Adeje y Arona, Tenerife Sur" class="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+      <img src="assets/hero-2.png" alt="Obra en ejecución" class="absolute inset-0 h-full w-full object-cover" loading="lazy" />
     </div>
     <div id="slide-2" class="carousel-slide absolute inset-0 opacity-0">
-      <img src="assets/hero-3.png" alt="Diseño y construcción de viviendas en Los Cristianos, Tenerife Sur" class="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+      <img src="assets/hero-3.png" alt="Diseño y construcción Tenerife" class="absolute inset-0 h-full w-full object-cover" loading="lazy" />
     </div>
     <div class="absolute inset-0 bg-black/40"></div>
     <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/35 to-black/55 pointer-events-none"></div>
@@ -261,6 +261,113 @@
 
 
 <!-- ═══════════════════════════════════════════
+     SERVICIOS DE REFORMA
+════════════════════════════════════════════ -->
+<section id="servicios-reforma" class="bg-black text-white scroll-mt-28 py-16 sm:py-20 md:py-24">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+    <div class="mb-10 sm:mb-12">
+      <span class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[11px] uppercase tracking-[0.28em] text-white/80 backdrop-blur">
+        <span class="h-1.5 w-1.5 rounded-full bg-white/70"></span>Lo que hacemos
+      </span>
+      <h2 class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
+        Nuestros <span class="text-white/50">Servicios</span>
+      </h2>
+      <span class="mt-4 block h-[2px] w-24 bg-white/60"></span>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+      <!-- Baños -->
+      <a href="reformas-banos.html" class="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-neutral-900 transition-all duration-300 hover:-translate-y-1 hover:border-white/30 hover:shadow-[0_12px_32px_rgba(0,0,0,0.5)]">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="assets/despues-2.png" alt="Reforma de baños" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-transparent"></div>
+        </div>
+        <div class="flex flex-1 flex-col p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="flex h-7 w-7 items-center justify-center rounded-lg border border-white/10 bg-white/5">
+              <i class="ri-drop-line text-white/70 text-xs"></i>
+            </span>
+            <h3 class="text-base font-bold text-white">Reforma de Baños</h3>
+          </div>
+          <p class="text-[13px] leading-relaxed text-white/60 flex-1">Transformamos tu baño en un espacio elegante y funcional. Diseño personalizado, materiales de calidad y acabados impecables.</p>
+          <div class="mt-4 pt-4 border-t border-white/10 flex items-center justify-between">
+            <span class="text-[11px] uppercase tracking-[0.25em] text-white/50 group-hover:text-white/80 transition-colors">Ver servicio</span>
+            <i class="ri-arrow-right-line text-white/40 group-hover:text-white group-hover:translate-x-1 transition-all text-sm"></i>
+          </div>
+        </div>
+      </a>
+
+      <!-- Salón -->
+      <a href="reformas-salon.html" class="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-neutral-900 transition-all duration-300 hover:-translate-y-1 hover:border-white/30 hover:shadow-[0_12px_32px_rgba(0,0,0,0.5)]">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="assets/despues-4.jpeg" alt="Reforma de salón" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-transparent"></div>
+        </div>
+        <div class="flex flex-1 flex-col p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="flex h-7 w-7 items-center justify-center rounded-lg border border-white/10 bg-white/5">
+              <i class="ri-sofa-line text-white/70 text-xs"></i>
+            </span>
+            <h3 class="text-base font-bold text-white">Reforma de Salón</h3>
+          </div>
+          <p class="text-[13px] leading-relaxed text-white/60 flex-1">Renovamos tu salón con estilo y precisión. Espacios amplios, luminosos y con personalidad propia adaptados a tu gusto.</p>
+          <div class="mt-4 pt-4 border-t border-white/10 flex items-center justify-between">
+            <span class="text-[11px] uppercase tracking-[0.25em] text-white/50 group-hover:text-white/80 transition-colors">Ver servicio</span>
+            <i class="ri-arrow-right-line text-white/40 group-hover:text-white group-hover:translate-x-1 transition-all text-sm"></i>
+          </div>
+        </div>
+      </a>
+
+      <!-- Cocina -->
+      <a href="reformas-cocina.html" class="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-neutral-900 transition-all duration-300 hover:-translate-y-1 hover:border-white/30 hover:shadow-[0_12px_32px_rgba(0,0,0,0.5)]">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="assets/despues-5.png" alt="Reforma de cocina" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-transparent"></div>
+        </div>
+        <div class="flex flex-1 flex-col p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="flex h-7 w-7 items-center justify-center rounded-lg border border-white/10 bg-white/5">
+              <i class="ri-knife-line text-white/70 text-xs"></i>
+            </span>
+            <h3 class="text-base font-bold text-white">Reforma de Cocina</h3>
+          </div>
+          <p class="text-[13px] leading-relaxed text-white/60 flex-1">Cocinas modernas, funcionales y con carácter. Optimizamos cada centímetro con materiales duraderos y diseño actual.</p>
+          <div class="mt-4 pt-4 border-t border-white/10 flex items-center justify-between">
+            <span class="text-[11px] uppercase tracking-[0.25em] text-white/50 group-hover:text-white/80 transition-colors">Ver servicio</span>
+            <i class="ri-arrow-right-line text-white/40 group-hover:text-white group-hover:translate-x-1 transition-all text-sm"></i>
+          </div>
+        </div>
+      </a>
+
+      <!-- Habitación -->
+      <a href="reformas-habitacion.html" class="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-neutral-900 transition-all duration-300 hover:-translate-y-1 hover:border-white/30 hover:shadow-[0_12px_32px_rgba(0,0,0,0.5)]">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="assets/despues-3.png" alt="Reforma de habitación" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-transparent"></div>
+        </div>
+        <div class="flex flex-1 flex-col p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="flex h-7 w-7 items-center justify-center rounded-lg border border-white/10 bg-white/5">
+              <i class="ri-hotel-bed-line text-white/70 text-xs"></i>
+            </span>
+            <h3 class="text-base font-bold text-white">Reforma de Habitación</h3>
+          </div>
+          <p class="text-[13px] leading-relaxed text-white/60 flex-1">Creamos dormitorios que invitan al descanso. Ambientes serenos, bien distribuidos y con una estética que te representa.</p>
+          <div class="mt-4 pt-4 border-t border-white/10 flex items-center justify-between">
+            <span class="text-[11px] uppercase tracking-[0.25em] text-white/50 group-hover:text-white/80 transition-colors">Ver servicio</span>
+            <i class="ri-arrow-right-line text-white/40 group-hover:text-white group-hover:translate-x-1 transition-all text-sm"></i>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
      NOSOTROS
 ════════════════════════════════════════════ -->
 <section id="nosotros" class="relative bg-black text-white scroll-mt-28">
@@ -285,6 +392,9 @@
       <span class="mx-auto mt-4 block h-[2px] w-20 sm:w-24 bg-white/70 md:mx-0"></span>
       <p class="mx-auto mt-6 max-w-xl text-[15px] sm:text-base leading-relaxed text-white/85 md:mx-0">
         En Grupo OMG Construcción desarrollamos proyectos de construcción y reformas con altos estándares de calidad, uniendo diseño, planificación y ejecución precisa. Acompañamos a nuestros clientes en todo el proceso constructivo, ofreciendo un servicio transparente, profesional y totalmente personalizado, desde la idea inicial hasta la entrega final. Trabajamos en obras residenciales y proyectos de alto nivel en el sur de Tenerife, incluyendo villas de lujo en zonas exclusivas como La Caleta. Nuestro objetivo es construir con calidad, confianza y resultados que superen expectativas.
+      </p>
+      <p class="mx-auto mt-4 max-w-xl text-[15px] sm:text-base leading-relaxed text-white/60 md:mx-0">
+        Nos ocupamos de todo el proceso constructivo con un equipo preparado para ejecutar cada proyecto con profesionalidad, organización y absoluta atención al detalle, transmitiendo confianza y tranquilidad desde el primer día.
       </p>
 
       <dl class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" id="stats-block">
@@ -324,160 +434,72 @@
 
 
 <!-- ═══════════════════════════════════════════
-     PROYECTOS
+     ANTES & DESPUÉS
 ════════════════════════════════════════════ -->
-<section id="proyectos" class="bg-neutral-950 text-neutral-100 scroll-mt-28">
-  <div class="mx-auto max-w-7xl px-4 py-16 sm:py-20 md:px-6 lg:py-28">
-    <div class="mb-8 sm:mb-10 lg:mb-12">
-      <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-        <span class="text-neutral-400">Proyectos Realizados</span>
-      </h2>
-      <span class="mt-3 block h-[2px] w-20 sm:w-24 bg-neutral-500"></span>
-    </div>
-    <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
-      <li class="group relative block overflow-hidden rounded-3xl ring-1 ring-white/10 bg-neutral-900/40 hover:ring-white/20 transition-all cursor-pointer">
-        <div class="relative aspect-[16/10] w-full">
-          <img src="https://readdy.ai/api/search-image?query=modern%20luxury%20residential%20house%20exterior%20at%20golden%20hour%20with%20warm%20lighting%20large%20windows%20contemporary%20architecture%20swimming%20pool%20garden%20Argentine%20suburb%20high%20quality%20photography&width=800&height=500&seq=1&orientation=landscape" alt="Reforma de vivienda en Adeje, Tenerife Sur – OMG Construcciones" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]" />
-          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-black/10 to-transparent"></div>
-        </div>
-        <span class="pointer-events-none absolute left-3 top-3 inline-flex items-center gap-2 rounded-full border border-white/15 bg-black/40 px-3 py-1 text-[11px] uppercase tracking-[0.22em] text-neutral-200 backdrop-blur">
-          <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span>Casas
-        </span>
-        <div class="absolute inset-0 grid place-items-center bg-black/65 opacity-0 transition-opacity duration-250 group-hover:opacity-100">
-          <div class="px-5 text-center">
-            <p class="text-xl font-bold text-white">El Cantón</p>
-            <p class="mt-1 text-[11px] uppercase tracking-[0.22em] text-neutral-300">El Cantón, Puertos</p>
-          </div>
-        </div>
-      </li>
-      <li class="group relative block overflow-hidden rounded-3xl ring-1 ring-white/10 bg-neutral-900/40 hover:ring-white/20 transition-all cursor-pointer">
-        <div class="relative aspect-[16/10] w-full">
-          <img src="https://readdy.ai/api/search-image?query=elegant%20modern%20house%20exterior%20white%20walls%20flat%20roof%20large%20glass%20windows%20landscaped%20garden%20driveway%20sunset%20lighting%20high%20quality%20architectural%20photography%20Argentina&width=800&height=500&seq=2&orientation=landscape" alt="Construcción de vivienda en Arona, Tenerife Sur" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
-          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-black/10 to-transparent"></div>
-        </div>
-        <span class="pointer-events-none absolute left-3 top-3 inline-flex items-center gap-2 rounded-full border border-white/15 bg-black/40 px-3 py-1 text-[11px] uppercase tracking-[0.22em] text-neutral-200 backdrop-blur">
-          <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span>Casas
-        </span>
-        <div class="absolute inset-0 grid place-items-center bg-black/65 opacity-0 transition-opacity duration-250 group-hover:opacity-100">
-          <div class="px-5 text-center">
-            <p class="text-xl font-bold text-white">El Campo Cardales 071</p>
-            <p class="mt-1 text-[11px] uppercase tracking-[0.22em] text-neutral-300">El Campo Cardales, Los Cardales</p>
-          </div>
-        </div>
-      </li>
-      <li class="group relative block overflow-hidden rounded-3xl ring-1 ring-white/10 bg-neutral-900/40 hover:ring-white/20 transition-all cursor-pointer">
-        <div class="relative aspect-[16/10] w-full">
-          <img src="https://readdy.ai/api/search-image?query=beautiful%20two-story%20modern%20house%20with%20terrace%20contemporary%20design%20greenery%20around%20evening%20light%20warm%20tones%20high%20end%20residential%20photography%20Argentina&width=800&height=500&seq=3&orientation=landscape" alt="Reforma integral de apartamento en Los Cristianos, Tenerife Sur" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
-          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-black/10 to-transparent"></div>
-        </div>
-        <span class="pointer-events-none absolute left-3 top-3 inline-flex items-center gap-2 rounded-full border border-white/15 bg-black/40 px-3 py-1 text-[11px] uppercase tracking-[0.22em] text-neutral-200 backdrop-blur">
-          <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span>Casas
-        </span>
-        <div class="absolute inset-0 grid place-items-center bg-black/65 opacity-0 transition-opacity duration-250 group-hover:opacity-100">
-          <div class="px-5 text-center">
-            <p class="text-xl font-bold text-white">Nordelta, Tipas</p>
-            <p class="mt-1 text-[11px] uppercase tracking-[0.22em] text-neutral-300">Nordelta, Tipas</p>
-          </div>
-        </div>
-      </li>
-      <li class="group relative block overflow-hidden rounded-3xl ring-1 ring-white/10 bg-neutral-900/40 hover:ring-white/20 transition-all cursor-pointer">
-        <div class="relative aspect-[16/10] w-full">
-          <img src="https://readdy.ai/api/search-image?query=stunning%20modern%20villa%20exterior%20clean%20lines%20white%20facade%20pool%20area%20lush%20green%20lawn%20blue%20sky%20architectural%20photography%20Argentina%20luxury%20home&width=800&height=500&seq=4&orientation=landscape" alt="Villa de lujo reformada en Costa Adeje, Tenerife Sur" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
-          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-black/10 to-transparent"></div>
-        </div>
-        <span class="pointer-events-none absolute left-3 top-3 inline-flex items-center gap-2 rounded-full border border-white/15 bg-black/40 px-3 py-1 text-[11px] uppercase tracking-[0.22em] text-neutral-200 backdrop-blur">
-          <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span>Casas
-        </span>
-        <div class="absolute inset-0 grid place-items-center bg-black/65 opacity-0 transition-opacity duration-250 group-hover:opacity-100">
-          <div class="px-5 text-center">
-            <p class="text-xl font-bold text-white">El Campo Cardales I</p>
-            <p class="mt-1 text-[11px] uppercase tracking-[0.22em] text-neutral-300">El Campo Cardales, Los Cardales</p>
-          </div>
-        </div>
-      </li>
-      <li class="group relative block overflow-hidden rounded-3xl ring-1 ring-white/10 bg-neutral-900/40 hover:ring-white/20 transition-all cursor-pointer">
-        <div class="relative aspect-[16/10] w-full">
-          <img src="https://readdy.ai/api/search-image?query=contemporary%20house%20exterior%20minimalist%20design%20warm%20wood%20accents%20glass%20balcony%20well%20maintained%20garden%20golden%20hour%20light%20high%20quality%20photo&width=800&height=500&seq=5&orientation=landscape" alt="Reforma de chalet en Adeje, Tenerife Sur – OMG Construcciones" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
-          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-black/10 to-transparent"></div>
-        </div>
-        <span class="pointer-events-none absolute left-3 top-3 inline-flex items-center gap-2 rounded-full border border-white/15 bg-black/40 px-3 py-1 text-[11px] uppercase tracking-[0.22em] text-neutral-200 backdrop-blur">
-          <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span>Casas
-        </span>
-        <div class="absolute inset-0 grid place-items-center bg-black/65 opacity-0 transition-opacity duration-250 group-hover:opacity-100">
-          <div class="px-5 text-center">
-            <p class="text-xl font-bold text-white">El Campo Cardales III</p>
-            <p class="mt-1 text-[11px] uppercase tracking-[0.22em] text-neutral-300">El Campo Cardales, Los Cardales</p>
-          </div>
-        </div>
-      </li>
-      <li class="group relative block overflow-hidden rounded-3xl ring-1 ring-white/10 bg-neutral-900/40 hover:ring-white/20 transition-all cursor-pointer">
-        <div class="relative aspect-[16/10] w-full">
-          <img src="https://readdy.ai/api/search-image?query=modern%20residential%20house%20with%20large%20windows%20concrete%20and%20wood%20materials%20green%20landscaping%20driveway%20warm%20sunset%20lighting%20architectural%20photography&width=800&height=500&seq=6&orientation=landscape" alt="Construcción residencial en Granadilla de Abona, Tenerife Sur" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
-          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-black/10 to-transparent"></div>
-        </div>
-        <span class="pointer-events-none absolute left-3 top-3 inline-flex items-center gap-2 rounded-full border border-white/15 bg-black/40 px-3 py-1 text-[11px] uppercase tracking-[0.22em] text-neutral-200 backdrop-blur">
-          <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span>Casas
-        </span>
-        <div class="absolute inset-0 grid place-items-center bg-black/65 opacity-0 transition-opacity duration-250 group-hover:opacity-100">
-          <div class="px-5 text-center">
-            <p class="text-xl font-bold text-white">El Campo Cardales II</p>
-            <p class="mt-1 text-[11px] uppercase tracking-[0.22em] text-neutral-300">El Campo Cardales, Los Cardales</p>
-          </div>
-        </div>
-      </li>
-      <li class="group relative block overflow-hidden rounded-3xl ring-1 ring-white/10 bg-neutral-900/40 hover:ring-white/20 transition-all cursor-pointer">
-        <div class="relative aspect-[16/10] w-full">
-          <img src="https://readdy.ai/api/search-image?query=beautiful%20family%20home%20exterior%20classic%20modern%20style%20brick%20and%20white%20walls%20front%20porch%20garden%20flowers%20sunny%20day%20high%20quality%20photography&width=800&height=500&seq=7&orientation=landscape" alt="Reforma de vivienda en San Miguel de Abona, Tenerife Sur" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
-          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-black/10 to-transparent"></div>
-        </div>
-        <span class="pointer-events-none absolute left-3 top-3 inline-flex items-center gap-2 rounded-full border border-white/15 bg-black/40 px-3 py-1 text-[11px] uppercase tracking-[0.22em] text-neutral-200 backdrop-blur">
-          <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span>Casas
-        </span>
-        <div class="absolute inset-0 grid place-items-center bg-black/65 opacity-0 transition-opacity duration-250 group-hover:opacity-100">
-          <div class="px-5 text-center">
-            <p class="text-xl font-bold text-white">Nordelta Castaños</p>
-            <p class="mt-1 text-[11px] uppercase tracking-[0.22em] text-neutral-300">Castaños, Nordelta</p>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
+<section id="antes-despues" class="bg-neutral-950 text-white scroll-mt-28 py-16 sm:py-20 md:py-24">
+  <div class="mx-auto max-w-5xl px-4 sm:px-6">
 
-
-<!-- ═══════════════════════════════════════════
-     GALERÍA
-════════════════════════════════════════════ -->
-<section class="bg-black text-white scroll-mt-28 py-16 sm:py-20 md:py-24">
-  <div class="mx-auto max-w-5xl px-6">
-    <div class="mb-8 sm:mb-10">
+    <!-- Cabecera -->
+    <div class="mb-10 sm:mb-12 text-center">
       <span class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[11px] uppercase tracking-[0.28em] text-white/80 backdrop-blur">
-        <span class="h-1.5 w-1.5 rounded-full bg-white/70"></span>Galería
+        <span class="h-1.5 w-1.5 rounded-full bg-white/70"></span>Nuestras Reformas
       </span>
-      <h2 class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white">
-        <span class="text-white/70">Obras</span>
+      <h2 class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
+        Antes <span class="text-white/50">&</span> <span class="text-white/70">Después</span>
       </h2>
-      <span class="mt-4 block h-[2px] w-24 bg-white/70"></span>
+      <span class="mt-4 block h-[2px] w-24 bg-white/60 mx-auto"></span>
+      <p class="mt-4 text-sm text-white/60 max-w-xl mx-auto">Arrastrá el control para comparar el estado original con el resultado final de cada reforma.</p>
     </div>
-    <div class="relative overflow-hidden rounded-2xl">
-      <div class="carousel-track" id="gallery-track">
-        <div class="min-w-0 flex-[0_0_100%]"><div class="relative block w-full aspect-video overflow-hidden rounded-2xl"><img src="https://readdy.ai/api/search-image?query=modern%20house%20facade%20front%20view%20white%20exterior%20large%20entrance%20door%20landscaped%20garden%20clear%20sky%20high%20quality%20architectural%20photography&width=1200&height=675&seq=10&orientation=landscape" alt="Fachada reformada en Tenerife Sur – OMG Construcciones y Reformas" loading="lazy" class="h-full w-full object-cover" /></div></div>
-        <div class="min-w-0 flex-[0_0_100%]"><div class="relative block w-full aspect-video overflow-hidden rounded-2xl"><img src="https://readdy.ai/api/search-image?query=construction%20site%20workers%20pouring%20concrete%20foundation%20modern%20building%20under%20construction%20crane%20in%20background%20professional%20photography&width=1200&height=675&seq=11&orientation=landscape" alt="Obras y reformas en ejecución en Tenerife Sur" loading="lazy" class="h-full w-full object-cover" /></div></div>
-        <div class="min-w-0 flex-[0_0_100%]"><div class="relative block w-full aspect-video overflow-hidden rounded-2xl"><img src="https://readdy.ai/api/search-image?query=luxury%20house%20interior%20living%20room%20high%20ceilings%20modern%20furniture%20warm%20lighting%20floor%20to%20ceiling%20windows%20professional%20photography&width=1200&height=675&seq=12&orientation=landscape" alt="Reforma de salón y comedor en Adeje, Tenerife Sur" loading="lazy" class="h-full w-full object-cover" /></div></div>
-        <div class="min-w-0 flex-[0_0_100%]"><div class="relative block w-full aspect-video overflow-hidden rounded-2xl"><img src="https://readdy.ai/api/search-image?query=modern%20house%20exterior%20night%20view%20warm%20interior%20light%20glowing%20through%20windows%20pool%20area%20landscaping%20architectural%20photography&width=1200&height=675&seq=13&orientation=landscape" alt="Villa reformada de noche en Costa Adeje, Tenerife Sur" loading="lazy" class="h-full w-full object-cover" /></div></div>
-        <div class="min-w-0 flex-[0_0_100%]"><div class="relative block w-full aspect-video overflow-hidden rounded-2xl"><img src="https://readdy.ai/api/search-image?query=modern%20kitchen%20interior%20white%20cabinets%20marble%20countertop%20stainless%20steel%20appliances%20natural%20light%20clean%20design%20professional%20photo&width=1200&height=675&seq=14&orientation=landscape" alt="Reforma de cocina moderna en Los Cristianos, Tenerife Sur" loading="lazy" class="h-full w-full object-cover" /></div></div>
-        <div class="min-w-0 flex-[0_0_100%]"><div class="relative block w-full aspect-video overflow-hidden rounded-2xl"><img src="https://readdy.ai/api/search-image?query=house%20exterior%20terrace%20wooden%20deck%20outdoor%20furniture%20green%20lawn%20palm%20trees%20sunny%20day%20residential%20photography&width=1200&height=675&seq=15&orientation=landscape" alt="Reforma de terraza exterior en Arona, Tenerife Sur" loading="lazy" class="h-full w-full object-cover" /></div></div>
-        <div class="min-w-0 flex-[0_0_100%]"><div class="relative block w-full aspect-video overflow-hidden rounded-2xl"><img src="https://readdy.ai/api/search-image?query=modern%20bathroom%20interior%20walk%20in%20shower%20marble%20tiles%20double%20vanity%20large%20mirror%20warm%20lighting%20luxury%20design%20photo&width=1200&height=675&seq=16&orientation=landscape" alt="Reforma de baño moderno en Adeje, Tenerife Sur – OMG Construcciones" loading="lazy" class="h-full w-full object-cover" /></div></div>
-        <div class="min-w-0 flex-[0_0_100%]"><div class="relative block w-full aspect-video overflow-hidden rounded-2xl"><img src="https://readdy.ai/api/search-image?query=house%20entrance%20hall%20double%20height%20ceiling%20modern%20staircase%20glass%20railing%20pendant%20light%20warm%20tones%20interior%20photography&width=1200&height=675&seq=17&orientation=landscape" alt="Reforma de hall y entrada en vivienda de Tenerife Sur" loading="lazy" class="h-full w-full object-cover" /></div></div>
+
+    <!-- Grid: Slider izquierda · Datos derecha -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+
+      <!-- Columna izquierda: slider + controles -->
+      <div class="flex flex-col items-center">
+        <div class="ba-slider w-full" id="ba-main" style="aspect-ratio:9/16; max-height:80vh; max-width:420px;">
+          <img id="ba-after-img" src="assets/despues-5.png" alt="Después" class="ba-after" />
+          <div class="ba-before-wrap" id="ba-before-wrap" style="width:50%;">
+            <img id="ba-before-img" src="assets/antes-5.png" alt="Antes" class="ba-before" style="width:200%;" />
+          </div>
+          <div class="ba-line" id="ba-line" style="left:50%;"></div>
+          <div class="ba-handle" id="ba-handle" style="left:50%;">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 5l-5 7 5 7M16 5l5 7-5 7" stroke="#111" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </div>
+          <span class="ba-label ba-label-before">ANTES</span>
+          <span class="ba-label ba-label-after">DESPUÉS</span>
+        </div>
+
+        <!-- Título con fondo gris -->
+        <div class="mt-4 w-full max-w-[420px] text-center">
+          <span id="ba-title" class="inline-block rounded-lg border border-white/10 px-4 py-2 text-[11px] uppercase tracking-[0.2em] text-white/65" style="background:rgba(255,255,255,0.06);">Cocina estilo Mediterráneo Moderno con toques de Minimalismo Cálido</span>
+        </div>
+
+        <!-- Dots + flechas -->
+        <div class="mt-5 flex items-center justify-center gap-3 flex-wrap" id="ba-thumbs"></div>
+        <div class="mt-3 flex justify-center gap-3">
+          <button onclick="baPrev()" type="button" aria-label="Obra anterior"
+            class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/30 bg-white/10 text-white/80 hover:bg-white hover:text-black transition cursor-pointer">
+            <i class="ri-arrow-left-s-line text-lg"></i>
+          </button>
+          <button onclick="baNext()" type="button" aria-label="Obra siguiente"
+            class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/30 bg-white/10 text-white/80 hover:bg-white hover:text-black transition cursor-pointer">
+            <i class="ri-arrow-right-s-line text-lg"></i>
+          </button>
+        </div>
       </div>
+
+      <!-- Columna derecha: datos rápidos -->
+      <div id="ba-datos" class="rounded-2xl border border-white/10 p-6 sm:p-8" style="background:rgba(255,255,255,0.04);">
+        <!-- rellenado por JS -->
+      </div>
+
     </div>
-    <div class="mt-3 flex justify-center gap-2 flex-wrap" id="gallery-dots"></div>
-    <div class="mt-4 flex justify-center gap-3">
-      <button onclick="galleryPrev()" type="button" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/30 bg-white/10 text-white/80 hover:bg-white hover:text-black transition cursor-pointer"><i class="ri-arrow-left-s-line text-lg"></i></button>
-      <button onclick="galleryNext()" type="button" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/30 bg-white/10 text-white/80 hover:bg-white hover:text-black transition cursor-pointer"><i class="ri-arrow-right-s-line text-lg"></i></button>
-    </div>
+
   </div>
 </section>
+
 
 
 <!-- ═══════════════════════════════════════════
@@ -682,7 +704,7 @@
           <li><a href="#inicio"    class="text-neutral-300 hover:text-white transition">Home</a></li>
           <li><a href="#nosotros"  class="text-neutral-300 hover:text-white transition">Nosotros</a></li>
           <li><a href="#servicios" class="text-neutral-300 hover:text-white transition">Servicios</a></li>
-          <li><a href="#proyectos" class="text-neutral-300 hover:text-white transition">Proyectos Realizados</a></li>
+          <li><a href="#antes-despues" class="text-neutral-300 hover:text-white transition">Nuestras Reformas</a></li>
           <li><a href="#contacto"  class="text-neutral-300 hover:text-white transition">Contacto</a></li>
         </ul>
       </nav>
@@ -773,32 +795,6 @@
   function heroPrev() { heroGo(heroIdx - 1); }
   setInterval(heroNext, 5000);
 
-  // ─── Gallery carousel ───────────────────────
-  const galleryTotal = 8;
-  let galleryIdx = 0;
-  const galleryTrack = document.getElementById('gallery-track');
-  const galleryDotsContainer = document.getElementById('gallery-dots');
-
-  for (let i = 0; i < galleryTotal; i++) {
-    const btn = document.createElement('button');
-    btn.type = 'button';
-    btn.setAttribute('aria-label', `Imagen ${i+1}`);
-    btn.className = `h-2.5 w-2.5 rounded-full border border-white/30 transition cursor-pointer ${i === 0 ? 'bg-white/90' : 'bg-transparent hover:bg-white/30'}`;
-    btn.addEventListener('click', () => galleryGo(i));
-    galleryDotsContainer.appendChild(btn);
-  }
-
-  function galleryGo(idx) {
-    galleryIdx = (idx + galleryTotal) % galleryTotal;
-    galleryTrack.style.transform = `translateX(-${galleryIdx * 100}%)`;
-    galleryDotsContainer.querySelectorAll('button').forEach((btn, i) => {
-      btn.className = `h-2.5 w-2.5 rounded-full border border-white/30 transition cursor-pointer ${i === galleryIdx ? 'bg-white/90' : 'bg-transparent hover:bg-white/30'}`;
-    });
-  }
-  function galleryNext() { galleryGo(galleryIdx + 1); }
-  function galleryPrev() { galleryGo(galleryIdx - 1); }
-  setInterval(galleryNext, 5000);
-
   // ─── Testimonials carousel ──────────────────
   const testimonialsTotal = 3;
   let testimonialsIdx = 0;
@@ -876,6 +872,148 @@
 
   const statsBlock = document.getElementById('stats-block');
   if (statsBlock) statsObserver.observe(statsBlock);
+
+  // ─── Before & After Slider ──────────────────
+  // ratio = ancho/alto de la imagen "después" (medido exacto)
+  const baWorks = [
+    {
+      antes: 'assets/antes-5.png', despues: 'assets/despues-5.png',
+      titulo: 'Cocina estilo Mediterráneo Moderno con toques de Minimalismo Cálido',
+      datos: { nombre: 'Cocina — Minimalismo Cálido e Industrial Refinado', ubicacion: 'Playa San Juan', tipo: 'Reforma integral de cocina', duracion: '3 semanas', objetivo: 'Modernizar el espacio, mejorar la funcionalidad y aportar un estilo contemporáneo con materiales cálidos e industriales.' }
+    },
+    {
+      antes: 'assets/antes-1.png', despues: 'assets/despues-1.jpeg',
+      titulo: 'Estilo Minimalista Cálido con toques Industriales Refinados',
+      datos: { nombre: 'Local transformado en vivienda — Minimalismo Cálido + Industrial', ubicacion: 'Costa Adeje', tipo: 'Cambio de uso + reforma integral', duracion: '6 semanas', objetivo: 'Convertir un local en una vivienda funcional, optimizando distribución, luz natural y confort.' }
+    },
+    {
+      antes: 'assets/antes-2.png', despues: 'assets/despues-2.png',
+      titulo: 'Baño con un estilo Nórdico Refinado con un Toque de Lujo Clásico',
+      datos: { nombre: 'Baño Nórdico Refinado con Toque Clásico', ubicacion: 'Los Cristianos', tipo: 'Reforma integral de baño', duracion: '2 semanas', objetivo: 'Crear un espacio elegante, luminoso y funcional con acabados de alta calidad.' }
+    },
+    {
+      antes: 'assets/antes-3.png', despues: 'assets/despues-3.png',
+      titulo: 'Habitación contemporánea con esencia Japandi — equilibrio entre elegancia moderna y serenidad absoluta',
+      datos: { nombre: 'Habitación — Estilo Japandi', ubicacion: 'Playa de las Américas', tipo: 'Reforma de interior', duracion: '2 semanas', objetivo: 'Generar un ambiente sereno y equilibrado combinando diseño minimalista y calidez natural.' }
+    },
+    {
+      antes: 'assets/antes-4.png', despues: 'assets/despues-4.jpeg',
+      titulo: 'Salón Contemporáneo con Alma Clásica y Toques Nórdicos',
+      datos: { nombre: 'Salón — Contemporáneo con Alma Clásica', ubicacion: 'San Eugenio', tipo: 'Reforma de salón', duracion: '3 semanas', objetivo: 'Renovar el espacio aportando elegancia atemporal con un lenguaje contemporáneo.' }
+    },
+    {
+      antes: 'assets/antes-6.png', despues: 'assets/despues-6.jpeg',
+      titulo: 'Cocina — Minimalismo Cálido e Industrial Refinado',
+      datos: { nombre: 'Cocina — Minimalismo Cálido e Industrial Refinado', ubicacion: 'La Caleta', tipo: 'Reforma integral de cocina', duracion: '4 semanas', objetivo: 'Diseñar una cocina moderna de alto nivel, optimizando espacio y materiales con acabados premium.' }
+    },
+  ];
+  let baIdx = 0;
+
+  const baSlider     = document.getElementById('ba-main');
+  const baBeforeWrap = document.getElementById('ba-before-wrap');
+  const baBeforeImg  = document.getElementById('ba-before-img');
+  const baAfterImg   = document.getElementById('ba-after-img');
+  const baLine       = document.getElementById('ba-line');
+  const baHandle     = document.getElementById('ba-handle');
+  const baTitleEl    = document.getElementById('ba-title');
+  const baThumbsEl   = document.getElementById('ba-thumbs');
+  const baDatosEl    = document.getElementById('ba-datos');
+
+  function baUpdateDatos(d) {
+    baDatosEl.innerHTML = `
+      <p class="text-[10px] uppercase tracking-[0.28em] text-white/40 mb-3">Datos rápidos</p>
+      <h3 class="text-lg sm:text-xl font-bold text-white leading-snug mb-6">${d.nombre}</h3>
+      <ul class="space-y-4">
+        <li class="flex items-start gap-3">
+          <span class="mt-0.5 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-xl border border-white/10" style="background:rgba(255,255,255,0.06);">
+            <i class="ri-map-pin-2-line text-white/70 text-sm"></i>
+          </span>
+          <div>
+            <p class="text-[10px] uppercase tracking-[0.2em] text-white/40">Ubicación</p>
+            <p class="mt-0.5 text-sm font-medium text-white/85">${d.ubicacion}</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-0.5 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-xl border border-white/10" style="background:rgba(255,255,255,0.06);">
+            <i class="ri-hammer-line text-white/70 text-sm"></i>
+          </span>
+          <div>
+            <p class="text-[10px] uppercase tracking-[0.2em] text-white/40">Tipo de obra</p>
+            <p class="mt-0.5 text-sm font-medium text-white/85">${d.tipo}</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-0.5 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-xl border border-white/10" style="background:rgba(255,255,255,0.06);">
+            <i class="ri-timer-2-line text-white/70 text-sm"></i>
+          </span>
+          <div>
+            <p class="text-[10px] uppercase tracking-[0.2em] text-white/40">Duración</p>
+            <p class="mt-0.5 text-sm font-medium text-white/85">${d.duracion}</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-0.5 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-xl border border-white/10" style="background:rgba(255,255,255,0.06);">
+            <i class="ri-focus-3-line text-white/70 text-sm"></i>
+          </span>
+          <div>
+            <p class="text-[10px] uppercase tracking-[0.2em] text-white/40">Objetivo</p>
+            <p class="mt-0.5 text-sm leading-relaxed text-white/85">${d.objetivo}</p>
+          </div>
+        </li>
+      </ul>
+    `;
+  }
+
+  function baSetPercent(pct) {
+    pct = Math.max(2, Math.min(98, pct));
+    const sliderW = baSlider.offsetWidth;
+    baBeforeWrap.style.width = pct + '%';
+    baBeforeImg.style.width  = sliderW + 'px';
+    baLine.style.left   = pct + '%';
+    baHandle.style.left = pct + '%';
+  }
+
+  function baLoad(idx) {
+    baIdx = (idx + baWorks.length) % baWorks.length;
+    const w = baWorks[baIdx];
+    baAfterImg.src  = w.despues;
+    baBeforeImg.src = w.antes;
+    baTitleEl.textContent = w.titulo;
+    baUpdateDatos(w.datos);
+    baSetPercent(50);
+    baThumbsEl.querySelectorAll('button').forEach((btn, i) => {
+      btn.className = `h-2.5 w-2.5 rounded-full border border-white/30 transition cursor-pointer ${i === baIdx ? 'bg-white' : 'bg-transparent hover:bg-white/40'}`;
+    });
+  }
+  function baNext() { baLoad(baIdx + 1); }
+  function baPrev() { baLoad(baIdx - 1); }
+
+  // Thumbnails / dots
+  baWorks.forEach((_, i) => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.setAttribute('aria-label', `Reforma ${i + 1}`);
+    btn.className = `h-2.5 w-2.5 rounded-full border border-white/30 transition cursor-pointer ${i === 0 ? 'bg-white' : 'bg-transparent hover:bg-white/40'}`;
+    btn.addEventListener('click', () => baLoad(i));
+    baThumbsEl.appendChild(btn);
+  });
+
+  function baGetPct(clientX) {
+    const rect = baSlider.getBoundingClientRect();
+    return ((clientX - rect.left) / rect.width) * 100;
+  }
+
+  let baDragging = false;
+  baSlider.addEventListener('mousedown', e => { baDragging = true; baSetPercent(baGetPct(e.clientX)); });
+  window.addEventListener('mousemove',  e => { if (baDragging) baSetPercent(baGetPct(e.clientX)); });
+  window.addEventListener('mouseup',    ()  => { baDragging = false; });
+
+  baSlider.addEventListener('touchstart', e => { baDragging = true; baSetPercent(baGetPct(e.touches[0].clientX)); }, { passive: true });
+  baSlider.addEventListener('touchmove',  e => { if (baDragging) { e.preventDefault(); baSetPercent(baGetPct(e.touches[0].clientX)); } }, { passive: false });
+  baSlider.addEventListener('touchend',   ()  => { baDragging = false; });
+
+  // Inicializar el panel de datos rápidos al cargar
+  baLoad(0);
 </script>
 
 </body>
