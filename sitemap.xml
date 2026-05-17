@@ -10,4 +10,24 @@
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://nicolasrequejo0.github.io/pagina-web-nico/reformas-banos.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nicolasrequejo0.github.io/pagina-web-nico/reformas-cocina.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nicolasrequejo0.github.io/pagina-web-nico/reformas-salon.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://nicolasrequejo0.github.io/pagina-web-nico/reformas-habitacion.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>
